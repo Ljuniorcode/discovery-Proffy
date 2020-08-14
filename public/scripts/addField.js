@@ -11,7 +11,7 @@ function cloneField() {
   //para cada campo limpar
   fields.forEach(field => console.log(field))
   //pegar o field do momento e limpa ele
-    field.value = ""
+    field.value = "";
   
 
 
