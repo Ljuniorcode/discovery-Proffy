@@ -1,3 +1,4 @@
+<<<<<<< HEAD
    <p align="center">
       <img src="https://user-images.githubusercontent.com/59374587/89741531-76095b00-da68-11ea-9005-3d931bb245eb.png" width="30%"/>
    </p>
@@ -58,3 +59,9 @@
    Luciano Junior
 
    </div>
+=======
+Next Level Week, segunda edição, project "Proffy".
+
+O projeto Proffy, uma plataforma de aprendizagem online, foi um projeto open-source desenvolvido durante a Next Level Week, que aconteceu entre 03/08 e 14/08, a partir da aula @Rocketseat, pelo instrutor de desenvolvimento web para iniciantes em programação, @ MaykBrito.
+
+>>>>>>> f87dba52fe58745e9c29466e2785eb2673154d25
