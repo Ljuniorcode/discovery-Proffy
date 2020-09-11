@@ -37,6 +37,10 @@ async function pageStudy(req, res) {
     const db = await Database
     const proffys = await db.all(query)
 
+    proffys.map((proffy)=>{
+      proffy.subject = getSubject(proffy.subject)
+    })
+
     return res.render('study.html', { proffys, subjects, filters, weekdays })
 
   } catch (error) {
@@ -49,7 +53,7 @@ function pageGiveClasses(req, res) {
   return res.render("give-classes.html", { subjects, weekdays })
 }
 
-function saveClasses(req, res) {
+async function saveClasses(req, res) {
   const createProffy = require('./database/createProffy')
 
   const proffyValue = {
@@ -74,7 +78,21 @@ function saveClasses(req, res) {
 
   })
 
-  return res.redirect("/study")
+  try {
+    const db = await Database
+    await createProffy(db, {proffyValue, classValue, classScheduleValues})
+
+    let queryString = "?subject=" + req.body.subject
+    queryString += "&weekday=" + req.body.weekday[0]
+    queryString += "&time=" + req.body.time_from[0]
+
+
+    return res.redirect("/study" + queryString)
+    
+  }catch (error){
+    console.log(error)
+  }
+  
 
 }
 

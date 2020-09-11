@@ -30,7 +30,7 @@ server
 .get('/study', pageStudy)
 .get('/give-classes',pageGiveClasses)
 .post('/save-classes',saveClasses)
-
+ 
 
 //START DO SERVIDOR
 .listen(5000)

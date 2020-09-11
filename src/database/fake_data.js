@@ -15,7 +15,7 @@ const proffys = [
     name: "Luciano Junior", 
     avatar: "https://avatars2.githubusercontent.com/u/59096165?s=460&u=cfa7751ada8a4093f0068156cb1fb428adea8d3e&v=4", 
     whatsapp: "6199892121", 
-    bio: 'Entusiasta das melhores tecnologias de Matemática...', 
+    bio: 'Entusiasta das melhores tecnologias de desenvolvimento web...', 
     subject: "Matemática", 
     cost: "30", 
     weekday: [1], 
